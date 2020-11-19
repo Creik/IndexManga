@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: Federant;
+}
+.container{
+  padding-top: 1.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  max-height: 876.8px;
+  margin-right: 1rem;
+  width: 360px;
+  justify-content: space-between;
+}
+#title,#header{
+  background-color: white;
+  box-shadow: 0px 0px 4px gray;
+  border: 10x solid gray;
+}
+#title{
+  width: 100%;
+  padding: .4rem;
+  border-top-left-radius: .625rem;
+}
+#title h1{
+  text-align: center;
+}
+#header{
+  border-bottom-left-radius: .625rem;
+  max-height: 816px;
+  height: 816px;
+  width: 100%;
+  padding: .4rem;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  max-height: 876.8px;
+  justify-content: space-between;
+  width: 1200px;
+  max-width: 1200px;
+}
+#topbottom{
+  height: calc(32px + .8rem);
+  border-top-right-radius: .625rem;
+  background-color: white;
+  box-shadow: 0px 0px 4px gray;
+  border: 10x solid gray;
+}
+#main{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: space-around;
+  height: 816px;
+  border-bottom-right-radius: .625rem;
+  background-color: white;
+  box-shadow: 0px 0px 4px gray;
+  border: 10x solid gray;
+}
+#main::-webkit-scrollbar{
+  display: none;
+}
+
+/*  */
+li{
+	list-style: none;
+}
+article:nth-child(odd) {
+	background-image: url(https://creik.github.io/IndexAnime/background1.jpg);
+}
+article:nth-child(even) {
+	background-image: url(https://creik.github.io/IndexAnime/background2.jpg);
+}
+article {
+	position: relative;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* border-radius: .625em; */
+	/* border: 1px solid orange; */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	/* flex: 1 18.75em; */
+	/* min-width: 25.95em; */
+	max-width: 23em;
+	/* max-height: 15em;
+	min-height: 15em; */
+	max-height: 14em;
+	min-height: 14em;
+	box-sizing: content-box;
+	margin: .5rem 0;
+	padding: .3em .5em;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+article .title h4 {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
+article .info ul {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+article .info ul li {
+    position: relative;
+    padding: .2em;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
+article .tec {
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    right: .8em;
+    top: .5rem;
+    margin-top: -.5em;
+    /* transition: all 10s linear; */
+}
+article .tec ul li {
+    margin: .7em 0;
+    line-height: 1;
+    font-weight: bold;
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
+
+/*  */
+#header{
+  padding: 1rem .7rem;
+}
+legend{
+  margin-left: .3rem;
+}
+fieldset{
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: .5px solid gray;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#abc {
+  padding: .5rem 0 .3rem;
+  height: 75px;
+}
+#abc li{
+  width: 1.6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#abc li:hover{
+  transform: scale(1.3);
+}
+#abc label{
+  display: block;
+  pointer-events: none;
+}
+#abc label input{
+  position: absolute;
+  visibility: hidden;
+}
+input[type=checkbox]{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: -.2rem;
+  visibility: hidden;
+}
+.active{
+  transform: scale(1.3);
+}
+#genders label{
+  position: relative;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#genders{
+  justify-content: normal;
+}
+#genders li{
+  margin: .2rem;
+  padding: .2rem;
+  border: 1px solid orange;
+}
+input[type=search]{
+  outline: none;
+  margin: .5rem auto;
+  padding: .2rem;
+  display: block;
+  border: 1px solid gray;
+  width: 70%;
+  /* border-radius: .3rem; */
+}

@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1;
+	font-family: Federant;
+}
+body{
+	background-color: rgba(0,0,0,0.125);
+}
+
+.container{
+	display: flex;
+	background-color: white;
+	width: 1600px;
+	height: 800px;
+	/* border: 1px solid orange; */
+	margin: 5rem auto;
+	/* box-shadow: 0px 0px 3px black; */
+	border: 1px solid black;
+	/* overflow: hidden; */
+}
+header *{
+	color: black !important;
+}
+header div{
+	border-bottom-color: black !important;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	min-width: 360px;
+	max-width: 360px;
+	height: calc(100% + 40px);
+	/* height: 101%; */
+	background-color: white;
+	box-shadow: 0px 0px 3px black;
+	margin-left: -10px;
+	/* border-right: 1px solid rgba(0,0,0,.3); */
+	transform: translateY(-20px);
+}
+header .title{
+	padding-bottom: .7rem;
+	border-bottom: 1px solid red;
+}
+header .title h1{
+	text-align: center;
+}
+header .search{
+	padding: .7rem;
+	border-bottom: 1px solid red;
+}
+header .search #search{
+	border-radius: 20px;
+	width: 80%;	
+	height: 1.7rem;
+	background-color: white;
+	margin: auto;
+	padding-left: .7rem;
+	border: 1px solid dodgerblue;
+}
+#search span{
+	opacity: .7;
+	line-height: 1.7rem;
+}
+header .a-z{
+	font-size: 1.5rem;
+	border-bottom: 1px solid red;
+	padding: .7rem 0;
+}
+.a-z ul{
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+.a-z ul:last-child{
+	margin-top: .5rem;
+}
+.a-z li{
+	color: white;
+	text-align: center;
+}
+.genders{
+	padding: .7rem 0;
+	border-bottom: 1px solid red;
+}
+.genders ul{
+	height: 175px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.genders ul li{
+	color: white;
+	position: relative;
+	border: 1px solid orange;
+	z-index: 2;
+	text-align: center;
+	font-size: 1em;
+	margin: 0em .2em;
+	padding: .2em;
+	cursor: pointer;
+}
+.filters{
+	padding: .7rem 0;
+}
+.filters ul{
+	list-style: none;
+}
+.filters select{
+	position: relative;
+	border-color: dodgerblue;
+	padding: .2em;
+	font-size: 1em;
+	font-family: Federant;
+	outline: none;
+}
+.flters select option {
+	color: black;
+	background-color: white;
+}
+main{
+	/* padding-top: 5rem; */
+	display: flex;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	flex: 1;
+	align-content: baseline;
+	padding-bottom: 1rem;
+}
+li{
+	list-style: none;
+}
+article:nth-child(odd) {
+	background-image: url(https://creik.github.io/IndexAnime/background1.jpg);
+}
+article:nth-child(even) {
+	background-image: url(https://creik.github.io/IndexAnime/background2.jpg);
+}
+article {
+	position: relative;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: .625em;
+	border: 1px solid orange;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	/* flex: 1 18.75em; */
+	/* min-width: 25.95em; */
+	max-width: 23em;
+	/* max-height: 15em;
+	min-height: 15em; */
+	max-height: 14em;
+	min-height: 14em;
+	box-sizing: content-box;
+	margin: 0.7em 0;
+	padding: .3em .5em;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+article .title h4 {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
+article .info ul {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+article .info ul li {
+    position: relative;
+    padding: .2em;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
+article .tec {
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    right: .8em;
+    top: .5rem;
+    margin-top: -.5em;
+    /* transition: all 10s linear; */
+}
+article .tec ul li {
+    margin: .7em 0;
+    line-height: 1;
+    font-weight: bold;
+    text-shadow: 1px 0px 1px rgba(0,0,0,.7), 0px 1px 1px rgba(0,0,0,.7), -1px 0px 1px rgba(0,0,0,.7), 0px -1px 1px rgba(0,0,0,.7);
+}
